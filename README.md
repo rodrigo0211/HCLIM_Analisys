@@ -37,12 +37,22 @@ ASUMPTION: df_PoPoPoPo and df_PPPP are small datasets and we are not working wit
 **2. Check procedures**  
 &nbsp;&nbsp;&nbsp;&nbsp;**2.1. Same stations with multiple locations**  
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Col LocationID is added as a combination of Lat/Lon
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - If the locationID are different, then add suffix (2..) to the name
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Col StationUpdated added for traceability reasons
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Col LocationID is added as a combination of Lat/Lon  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - If the locationID are different, then add suffix (2..) to the name  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Col StationUpdated added for traceability reasons  
 
 &nbsp;&nbsp;&nbsp;&nbsp;**2.2. Different stations with same LocationID**  
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - There are Statsions that share LocationID (Lat, Long) values (same values)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - To prevent from mistakes in future calculations, grouping, 0.06 is added to the Latitude value  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - unique_stations_per_location stores the LocationIDs affected and Stations per LocationID  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Also a new column UpdatedLatLong is added for traceability reasons  
+
 &nbsp;&nbsp;&nbsp;&nbsp;**2.3. Same Stations with same LocationID (lat/Lon) and dif Elevation**  
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - The most frequent Elevation is selected and all rows are updated with that value.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - A new column ElevationUpdated is added for traceability purposes
+
 &nbsp;&nbsp;&nbsp;&nbsp;**2.4. Drop out all rows with year values before 1678**  
 &nbsp;&nbsp;&nbsp;&nbsp;**2.5. Aggregating**  
 &nbsp;&nbsp;&nbsp;&nbsp;**2.6. Detect and update non-alphabetic letters in Station names**  
