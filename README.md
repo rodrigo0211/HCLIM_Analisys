@@ -9,6 +9,8 @@ Taking advantage from the Global Early Instrumental Monthly Meteorological Multi
 
 HCLIM provide with public dataset concerning monthly values for **TEMPERATURE**, **PRECIPITATION**, **WET DAYS** and **PREASSURE**. The collection totals 12,452 records (meteorological time series with one variable at one location) in 118 countries and more than 10 million rows.
 
-Below are the location of the 12,000 stations:
+Below are the location of the 12,000 stations for the precipitations file:
 
 ![image](https://github.com/user-attachments/assets/26b51324-1f6d-44f0-ba03-4c1334b6a4f4)
+
+
