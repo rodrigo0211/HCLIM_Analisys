@@ -54,6 +54,8 @@ ASUMPTION: df_PoPoPoPo and df_PPPP are small datasets and we are not working wit
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - A new column ElevationUpdated is added for traceability purposes
 
 &nbsp;&nbsp;&nbsp;&nbsp;**2.4. Drop out all rows with year values before 1678**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - the lower-limit to work with Dates in "pandas" df is year 1678
+
 &nbsp;&nbsp;&nbsp;&nbsp;**2.5. Aggregating**  
 &nbsp;&nbsp;&nbsp;&nbsp;**2.6. Detect and update non-alphabetic letters in Station names**  
 
