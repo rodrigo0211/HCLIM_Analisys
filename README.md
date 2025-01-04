@@ -19,9 +19,9 @@ Below are the location of the 12,000 stations for the precipitations file:
 
 ### 1. Data Cleaning process carridd out in this research  
 
-0. Importing Files and Join them
+0. Importing Files and Join them  
   0.1. Solving issue with pressure files  
-  0.2. Splitting Date/Time column into Year and Month
+  0.2. Splitting Date/Time column into Year and Month  
 2. Filling in Missing Elevation Values
      The Open-Elevation API is a free, open-source service that provides elevation data for any point on Earth. It acts as an alternative to commercial elevation services like the Google Elevation API, aiming to democratize access to topographic data.
   
