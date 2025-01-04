@@ -17,4 +17,23 @@ Below are the location of the 12,000 stations for the precipitations file:
 
 ![image](https://github.com/user-attachments/assets/26b51324-1f6d-44f0-ba03-4c1334b6a4f4)
 
+### 1. Data Cleaning process carridd out in this research
+
+0. Importing Files and Join them
+  0.1. Solving issue with pressure files
+  0.2. Splitting Date/Time column into Year and Month
+1. Filling in Missing Elevation Values
+  1.1. Removing rows with any missing values in the variables.
+2. Check procedures
+  2.1. Same stations with multiple locations
+  2.2. Different stations with same LocationID
+  2.3. Same Stations with same LocationID (lat/Lon) and dif Elevation
+  2.4. Drop out all rows with year values before 1678
+  2.5. Aggregating
+  2.6. Detect and update non alphabetic letters in Station names
+3. FINDING BREAKINGPOINTS AND FILLING IN DATA (24 hours running time!!)
+  3.1. Double check breakpoints and fix if needed
+4. STL (Seasonal-Trend decomposition)
+
+
 
