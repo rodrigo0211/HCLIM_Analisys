@@ -9,10 +9,9 @@ Paper can be found in:
 
 Taking advantage from the Global Early Instrumental Monthly Meteorological Multivariable Database, the HCLIM (Historical Climate Dataset) provides a full compilation of historical climate records dating back before 1890 and offers a unique opportunity to apply advanced geostatistical methods to predict climate variables at a specific location, at a specific date.
 
-![image](https://github.com/user-attachments/assets/9726d106-5c37-4046-a341-6f12c43d1987)
-
-
 HCLIM provide with public dataset concerning monthly values for **TEMPERATURE**, **PRECIPITATION**, **WET DAYS** and **PREASSURE**. The collection totals 12,452 records (meteorological time series with one variable at one location) in 118 countries and more than 10 million rows.
+
+![image](https://github.com/user-attachments/assets/9726d106-5c37-4046-a341-6f12c43d1987)
 
 Below are the location of the 12,000 stations for the precipitations file:
 
