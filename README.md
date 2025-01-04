@@ -57,6 +57,8 @@ ASUMPTION: df_PoPoPoPo and df_PPPP are small datasets and we are not working wit
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - the lower-limit to work with Dates in "pandas" df is year 1678
 
 &nbsp;&nbsp;&nbsp;&nbsp;**2.5. Aggregating**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - There are rows with same station, locationID and Date/Time. Only one must remain. The value of the variable is averaged  
+
 &nbsp;&nbsp;&nbsp;&nbsp;**2.6. Detect and update non-alphabetic letters in Station names**  
 
 **3. FINDING BREAKINGPOINTS AND FILLING IN DATA (24 hours running time!!)**  
