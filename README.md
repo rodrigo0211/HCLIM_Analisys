@@ -11,3 +11,4 @@ HCLIM provide with public dataset concerning monthly values for **TEMPERATURE**,
 
 Below are the location of the 12,000 stations:
 
+![image](https://github.com/user-attachments/assets/26b51324-1f6d-44f0-ba03-4c1334b6a4f4)
