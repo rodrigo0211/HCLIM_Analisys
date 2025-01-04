@@ -19,30 +19,33 @@ Below are the location of the 12,000 stations for the precipitations file:
 
 ### 1. Data Cleaning process carried out in this research  
 
-0. Importing Files and Join them  
-  0.1. Solving issue with pressure files  
-  0.2. Splitting Date/Time column into Year and Month  
-2. Filling in Missing Elevation Values
-     The Open-Elevation API is a free, open-source service that provides elevation data for any point on Earth. It acts as an alternative to commercial elevation services like the Google Elevation API, aiming to democratize access to topographic data.
-  
-  The service relies on publicly available elevation datasets, such as SRTM (Shuttle Radar Topography Mission) data, and allows users to query elevation information by providing latitude and longitude values through a simple HTTP API interface.
-  
-  Technically, the Open-Elevation API supports both GET and POST HTTP methods for querying elevation data.
-  
-  Users can request elevation information for multiple points in a single request by submitting a list of latitude and longitude pairs. The service then returns a JSON response containing the elevation in meters for each requested point. For bulk queries, the POST method is recommended, allowing users to submit their queries in the body of the request in JSON format.
-  
-  ElevationAdded column is added for traceability purposes.  
-  1.1. Removing rows with any missing values in the variables.  
-3. Check procedures  
-  2.1. Same stations with multiple locations  
-  2.2. Different stations with same LocationID  
-  2.3. Same Stations with same LocationID (lat/Lon) and dif Elevation  
-  2.4. Drop out all rows with year values before 1678  
-  2.5. Aggregating  
-  2.6. Detect and update non alphabetic letters in Station names  
-4. FINDING BREAKINGPOINTS AND FILLING IN DATA (24 hours running time!!)  
-  3.1. Double check breakpoints and fix if needed  s
-5. STL (Seasonal-Trend decomposition)
+**0. Importing Files and Join them**  
+&nbsp;&nbsp;&nbsp;&nbsp;**0.1. Solving issue with pressure files**  
+&nbsp;&nbsp;&nbsp;&nbsp;**0.2. Splitting Date/Time column into Year and Month**  
+
+**1. Filling in Missing Elevation Values**  
+The Open-Elevation API is a free, open-source service that provides elevation data for any point on Earth. It acts as an alternative to commercial elevation services like the Google Elevation API, aiming to democratize access to topographic data.  
+The service relies on publicly available elevation datasets, such as SRTM (Shuttle Radar Topography Mission) data, and allows users to query elevation information by providing latitude and longitude values through a simple HTTP API interface.  
+Technically, the Open-Elevation API supports both GET and POST HTTP methods for querying elevation data.  
+Users can request elevation information for multiple points in a single request by submitting a list of latitude and longitude pairs. The service then returns a JSON response containing the elevation in meters for each requested point. For bulk queries, the POST method is recommended, allowing users to submit their queries in the body of the request in JSON format.  
+ElevationAdded column is added for traceability purposes  
+&nbsp;&nbsp;&nbsp;&nbsp;**1.1. Removing rows with any missing values in the variables.**  
+
+**2. Check procedures**  
+&nbsp;&nbsp;&nbsp;&nbsp;**2.1. Same stations with multiple locations**  
+&nbsp;&nbsp;&nbsp;&nbsp;**2.2. Different stations with same LocationID**  
+&nbsp;&nbsp;&nbsp;&nbsp;**2.3. Same Stations with same LocationID (lat/Lon) and dif Elevation**  
+&nbsp;&nbsp;&nbsp;&nbsp;**2.4. Drop out all rows with year values before 1678**  
+&nbsp;&nbsp;&nbsp;&nbsp;**2.5. Aggregating**  
+&nbsp;&nbsp;&nbsp;&nbsp;**2.6. Detect and update non-alphabetic letters in Station names**  
+
+**3. FINDING BREAKINGPOINTS AND FILLING IN DATA (24 hours running time!!)**  
+&nbsp;&nbsp;&nbsp;&nbsp;**3.1. Double check breakpoints and fix if needed**  
+
+**4. STL (Seasonal-Trend decomposition)**  
+
+
+
 
 
 
