@@ -61,15 +61,13 @@ ASUMPTION: df_PoPoPoPo and df_PPPP are small datasets and we are not working wit
 
 &nbsp;&nbsp;&nbsp;&nbsp;**2.6. Detect and update non-alphabetic letters in Station names**  
 
-**3. FINDING BREAKINGPOINTS AND FILLING IN DATA (24 hours running time in my laptop!!)**  
+**3. Finding breakpoints and filling data (24 hours running time in my laptop!!)**  
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CRITERIA:  
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Check how many rows with Month value from every Year for a certain locationID exists. For the missing rows of each Month, add the corresponding rows using the average WetDays/Precipitation/Temp value of the first existing previous month/year and next month/year  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Check if for each group there is any year missing. For every year missing, create the corresponding 12 rows (one per each month) with the values for WetDays (and the rest of the variables) following the method forward or backward search implemented already  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Add a column "rowAdded" with 1 for the new rows added, and 0 for the rest  
-
-![image](https://github.com/user-attachments/assets/8dcf7d6f-3a1e-4233-8cb7-21321946417a)
 
 &nbsp;&nbsp;&nbsp;&nbsp;**3.1. Double check breakpoints and fix if needed**  
 
@@ -81,6 +79,22 @@ ASUMPTION: df_PoPoPoPo and df_PPPP are small datasets and we are not working wit
 ![image](https://github.com/user-attachments/assets/05d97ce5-1516-4c09-8347-4063183727f6)
 
 (*) SRD: Seasonally Removed Data
+
+### 2.  Finding breakpoints and filling data explanation in detail
+
+![image](https://github.com/user-attachments/assets/8dcf7d6f-3a1e-4233-8cb7-21321946417a)
+
+### 3. Future Work: TIME SERIES ANALISYS - SPATIO TEMPORAL ANALISYS
+
+- The first attempt is to perform a pure time forecasting using **ARIMA**  
+- Then, perform a vainilla **SPATIAL KRIGING**  
+- Take advantage of the updated **SPATIO-TEMPORAL KRIGING**  
+Other spatio-temporal models to be evaluated:  
+&nbsp;&nbsp;&nbsp;&nbsp;✓ KRK (Fixed Rank kriging)  
+&nbsp;&nbsp;&nbsp;&nbsp;✓ Empirical Orthogonal Functions (EOFs)  
+&nbsp;&nbsp;&nbsp;&nbsp;✓ Cokriging  
+&nbsp;&nbsp;&nbsp;&nbsp;✓ Bayesian Hierarchical Models  
+&nbsp;&nbsp;&nbsp;&nbsp;✓ Generalized Additive Models (GAMs) in Space and Time  
 
 
 
