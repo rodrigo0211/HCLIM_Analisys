@@ -32,8 +32,15 @@ ElevationAdded column is added for traceability purposes
 
 &nbsp;&nbsp;&nbsp;&nbsp;**1.1. Removing rows with any missing values in the variables.**  
 
+ASUMPTION: df_PoPoPoPo and df_PPPP are small datasets and we are not working with them  
+
 **2. Check procedures**  
 &nbsp;&nbsp;&nbsp;&nbsp;**2.1. Same stations with multiple locations**  
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Col LocationID is added as a combination of Lat/Lon
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - If the locationID are different, then add suffix (2..) to the name
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Col StationUpdated added for traceability reasons
+
 &nbsp;&nbsp;&nbsp;&nbsp;**2.2. Different stations with same LocationID**  
 &nbsp;&nbsp;&nbsp;&nbsp;**2.3. Same Stations with same LocationID (lat/Lon) and dif Elevation**  
 &nbsp;&nbsp;&nbsp;&nbsp;**2.4. Drop out all rows with year values before 1678**  
