@@ -29,6 +29,7 @@ The service relies on publicly available elevation datasets, such as SRTM (Shutt
 Technically, the Open-Elevation API supports both GET and POST HTTP methods for querying elevation data.  
 Users can request elevation information for multiple points in a single request by submitting a list of latitude and longitude pairs. The service then returns a JSON response containing the elevation in meters for each requested point. For bulk queries, the POST method is recommended, allowing users to submit their queries in the body of the request in JSON format.  
 ElevationAdded column is added for traceability purposes  
+
 &nbsp;&nbsp;&nbsp;&nbsp;**1.1. Removing rows with any missing values in the variables.**  
 
 **2. Check procedures**  
