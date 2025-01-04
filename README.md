@@ -80,6 +80,8 @@ ASUMPTION: df_PoPoPoPo and df_PPPP are small datasets and we are not working wit
 
 ![image](https://github.com/user-attachments/assets/05d97ce5-1516-4c09-8347-4063183727f6)
 
+(*) SRD: Seasonally Removed Data
+
 
 
 
