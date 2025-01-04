@@ -17,12 +17,21 @@ Below are the location of the 12,000 stations for the precipitations file:
 
 ![image](https://github.com/user-attachments/assets/26b51324-1f6d-44f0-ba03-4c1334b6a4f4)
 
-### 1. Data Cleaning process carridd out in this research
+### 1. Data Cleaning process carridd out in this research  
 
-0. Importing Files and Join them  
+0. Importing Files and Join them
   0.1. Solving issue with pressure files  
   0.2. Splitting Date/Time column into Year and Month
-2. Filling in Missing Elevation Values  
+2. Filling in Missing Elevation Values
+     The Open-Elevation API is a free, open-source service that provides elevation data for any point on Earth. It acts as an alternative to commercial elevation services like the Google Elevation API, aiming to democratize access to topographic data.
+  
+  The service relies on publicly available elevation datasets, such as SRTM (Shuttle Radar Topography Mission) data, and allows users to query elevation information by providing latitude and longitude values through a simple HTTP API interface.
+  
+  Technically, the Open-Elevation API supports both GET and POST HTTP methods for querying elevation data.
+  
+  Users can request elevation information for multiple points in a single request by submitting a list of latitude and longitude pairs. The service then returns a JSON response containing the elevation in meters for each requested point. For bulk queries, the POST method is recommended, allowing users to submit their queries in the body of the request in JSON format.
+  
+  ElevationAdded column is added for traceability purposes.  
   1.1. Removing rows with any missing values in the variables.  
 3. Check procedures  
   2.1. Same stations with multiple locations  
