@@ -17,7 +17,7 @@ Below are the location of the 12,000 stations for the precipitations file:
 
 ![image](https://github.com/user-attachments/assets/26b51324-1f6d-44f0-ba03-4c1334b6a4f4)
 
-### 1. Data Cleaning process carridd out in this research  
+### 1. Data Cleaning process carried out in this research  
 
 0. Importing Files and Join them  
   0.1. Solving issue with pressure files  
