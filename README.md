@@ -1,5 +1,5 @@
-# HCLIM (Historical Climate Dataset) Analisys
-## Data Clenaing, Analisys and Visualization of HCLIM dataset
+# HCLIM (Historical Climate Dataset) Analysis
+## Data Cleaning, Analisys and Visualization of HCLIM dataset
 
 ### 1. HCLIM info
 
